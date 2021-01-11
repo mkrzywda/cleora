@@ -10,6 +10,9 @@ Welcome to Synerise Cleora's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   data_model
+   graph_creation
+
 
 
 Indices and tables
