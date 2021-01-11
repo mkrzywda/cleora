@@ -12,6 +12,8 @@ Welcome to Synerise Cleora's documentation!
 
    data_model
    graph_creation
+   running
+   examples
 
 
 
