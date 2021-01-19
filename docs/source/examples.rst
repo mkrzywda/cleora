@@ -1,11 +1,11 @@
 .. _examples:
 
 Examples
-========== 
+======== 
 
 Classification
---------
+--------------
 
-Link prediction
---------
+Link prediction 
+---------------
 

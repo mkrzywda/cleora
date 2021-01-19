@@ -1,10 +1,10 @@
 .. _data-model:
 
-Data model
-==========
+Data model 
+========== 
 
-TSV (tab-separated values)
--------- 
+TSV (tab-separated values) 
+--------------------------
 
 JSON 
 -------- 
