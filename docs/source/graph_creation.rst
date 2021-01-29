@@ -1,4 +1,4 @@
 .. _graph-creation:
 
-Graph Creation
+Graph creation
 ==============

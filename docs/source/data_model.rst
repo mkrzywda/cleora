@@ -2,9 +2,3 @@
 
 Data model 
 ========== 
-
-TSV (tab-separated values) 
---------------------------
-
-JSON 
--------- 
