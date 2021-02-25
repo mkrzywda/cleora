@@ -17,13 +17,14 @@ Read the whitepaper `Cleora: A Simple, Strong and Scalable Graph Embedding Schem
 ===========================================
 
 .. toctree::
-   :maxdepth: 25
+   :maxdepth: 2
    :caption: Contents:
 
    graph_creation
    algorithms
    running
    examples
+   why_cleora
 
 
 

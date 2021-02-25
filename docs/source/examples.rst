@@ -1,7 +1,7 @@
 .. _examples:
 
-Examples
-======== 
+Use cases examples
+===================== 
 
 .. list-table::
    :widths: 40 80 80
