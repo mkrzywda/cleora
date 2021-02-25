@@ -64,8 +64,8 @@ the edge value for **U1hash <-> P1hash** equals 1/4 (1 divided by the total numb
     
 the edge value for **U1hash <-> P1hash** updates to 1/2 (1/4 + 1/4). After reading the next two, we finally have:
 
-    **U1hash <-> P1hash** = 1/2 \\
-    **U1hash <-> P2hash** = 1/2
+**U1hash <-> P1hash** = 1/2 \\
+**U1hash <-> P2hash** = 1/2
 
 Sparse Matrix
 ---------------------
