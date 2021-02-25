@@ -1,33 +1,48 @@
 .. _running:
 
-Running
-========== 
+Running configuration
+====================== 
 
 This page details how to use the cleora run command to define the embedding resources at runtime.
 
-Run parameters 
+Synopsis
+--------
+
+**cleora** [*options 2*] <*params 1*> [*options 2*] <*params 2*> ...
+
+Run options 
 --------------
 
-input (--input or -i)
+input
 ********************************************************
-A parameter that defines path for input file. You can use also absolute path or relative path.
+Using input param: *--input* or *-i* 
+
+Param Description: A parameter that defines path for input file. You can use also absolute path or relative path.
      
 
-file type (--type or -t)
+file type
 ********************************************************
-This parameter is responsible for defining the input file extension to the algorithm. Cleora supports two kinds of input files **.tsv**(tab-separated values) and **.json**.
+Using file type param: *--type* or *-t*
 
-dimension (*--dimenstion* or *-d*)
-********************************************************
-Embedding dimension size.
+Param Description: This parameter is responsible for defining the input file extension to the algorithm. Cleora supports two kinds of input files .tsv (tab-separated values) and .json.
 
-number of iterations (*--number-of-iterations* or *-n*)
+dimension
 ********************************************************
-Max number of iterations.
+Using dimension param: *--dimenstion* or *-d* 
 
-columns (*--columns* or *-c*)
+Param Description: Embedding dimension size.
+
+number of iterations
 ********************************************************
-Column names (max. 12), with modifiers from list: [transient::, reflexive::, complex::]
+Using number of iterations param: *--dimenstion* or *-d*
+
+Param Description: Set maximum number of iterations.
+
+columns
+********************************************************
+Using columnns param: *--columns* or *-c* 
+
+Param Description: Set column names (max. 12), with modifiers from list: [transient::, reflexive::, complex::]
 
 .. list-table::
    :widths: 20 80
@@ -86,35 +101,52 @@ Picture below representation how works column modifiers:
     :alt: examples use case of column modifiers
 
 
-relation name (*--relation-name* or *-r*)
+relation name
 ********************************************************
-Name of the relation, for output filename generation.
+Using relation param: *--relation-name* or *-r*
 
-prepend field name (*--prepend-field-name* or *-p*)
+Param Description: Name of the relation, for output filename generation.
+
+prepend field name
 ********************************************************
-Prameter that responsible for prepending field name to entity in output.
+Param Description: Using prepend field name param: *--relation-name* or *-r*
 
-log every n (*--log-every-n* or *-l*)
+Param Description: Prameter that responsible for prepending field name to entity in output.
+
+log every n
 ********************************************************
-Set log output for every N lines
+Using log every n params : *--log-every-n* or *-l*
 
-in memory embedding calculation (*--in-memory-embedding-calculation* or *-e*)
+Param Description: Set log output for every N lines
+
+in memory embedding calculation
 *********************************************************************************
-Parameter that responsible for using calculate embeddings in memory or with memory-mapped files. Default is on (setting -e 0). If you want off use -e 1.
+Using log in memory embedding calculation param: *--in-memory-embedding-calculation* or *-e*
 
-output dir (*--output-dir* or *-o*)
-********************************************************
-Set output directory for files with embeddings.
+Param Description: Parameter that responsible for using calculate embeddings in memory or with memory-mapped files. Default is on (setting -e 0). If you want off use -e 1.
 
-output format (*--output-format* or *-o*)
+output dir
 ********************************************************
-A parameter that defines the format of the output file. Possible output format are textfile (.txt) and numpy (.npy)
+Using output dir param: *--output-dir* or *-o* 
+
+Param Description: Set output directory for files with embeddings.
+
+output format
+********************************************************
+Using output format param: --output-format* or *-o*  
+
+Param Description: A parameter that defines the format of the output file. Possible output format are textfile (.txt) and numpy (.npy)
 
 
 Examples Cleora run configuration
 ---------------------------------
+
+Remember before you will first run cleora training (after download binary file from repository) to set execute file permission using *chmod +x*  
+
 .. code-block:: bash
 
+  
+   chmod +x cleora
    ./cleora -i files/samples/edgelist_sample.tsv 
             --columns="complex::reflexive::a b complex::c" 
             -d 128 
