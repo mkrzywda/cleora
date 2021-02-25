@@ -3,8 +3,6 @@
 Graph Creation
 =========================
 
-
-
 Cleora as a tool
 ----------------------
 
@@ -22,18 +20,19 @@ Based on the column format specification, Cleora performs:
 
 Those embeddings can then be utilized in a novel way thanks to their dim-wise independence property, which is described further below.
 
-
 Graph construction
 ------------------------
 
-.. figure:: _static/hypergraph-expansion.png
+
+.. figure:: _static/cleora-sparse-matrix.png
     :figwidth: 100 %
-    :width: 100 %
+    :width: 60 %
     :align: center
-    :alt: examples use case of column modifiers
+    :alt: Sparse Matrix
 
 
-**Graph construction** starts with the creation of a helper matrix *P* object as a regular 2-D Rust array, which is built according to the selected 
+
+Graph construction starts with the creation of a helper matrix *P* object as a regular 2-D Rust array, which is built according to the selected 
 expansion method. An example involving clique expansion is presented in Figure - a Cartesian product (all combinations) of all columns is created. 
 Each entity identifier from the original input file is hashed with `xxhash <https://cyan4973.github.io/xxHash/>`_ - a fast and efficient hashing method. 
 We hash the identifiers to store them in a unified, small data format. From the first line of our example:
@@ -93,11 +92,3 @@ Every SparseMatrix is created based on the program argument **--columns**. For o
 - users and brands by M1
 - products and brands by M2
 - users and products by M3
-
-
-.. figure:: _static/cleora-sparse-matrix.png
-    :figwidth: 100 %
-    :width: 60 %
-    :align: center
-    :alt: Sparse Matrix
-
