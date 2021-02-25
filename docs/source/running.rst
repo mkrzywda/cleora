@@ -3,27 +3,29 @@
 Running
 ========== 
 
+This page details how to use the cleora run command to define the embedding resources at runtime.
+
 Run parameters 
 --------------
 
-input (-input or -i)
+input (--input or -i)
 ********************************************************
 A parameter that defines path for input file. You can use also absolute path or relative path.
      
 
-file type (-type or -t)
+file type (--type or -t)
 ********************************************************
 This parameter is responsible for defining the input file extension to the algorithm. Cleora supports two kinds of input files **.tsv**(tab-separated values) and **.json**.
 
-dimension (*-dimenstion* or *-d*)
+dimension (*--dimenstion* or *-d*)
 ********************************************************
 Embedding dimension size.
 
-number of iterations (*-number-of-iterations* or *-n*)
+number of iterations (*--number-of-iterations* or *-n*)
 ********************************************************
 Max number of iterations.
 
-columns (*-columns* or *-c*)
+columns (*--columns* or *-c*)
 ********************************************************
 Column names (max. 12), with modifiers from list: [transient::, reflexive::, complex::]
 
@@ -84,28 +86,40 @@ Picture below representation how works column modifiers:
     :alt: examples use case of column modifiers
 
 
-relation name (*-relation-name* or *-r*)
+relation name (*--relation-name* or *-r*)
 ********************************************************
 Name of the relation, for output filename generation.
 
-prepend field name (*-prepend-field-name* or *-p*)
+prepend field name (*--prepend-field-name* or *-p*)
 ********************************************************
-Prepend field name to entity in output.
+Prameter that responsible for prepending field name to entity in output.
 
-log every n (*-log-every-n* or *-n*)
+log every n (*--log-every-n* or *-l*)
 ********************************************************
-Log output every N lines
+Set log output for every N lines
 
-in memory embedding calculation (*-in-memory-embedding-calculation* or *-e*)
+in memory embedding calculation (*--in-memory-embedding-calculation* or *-e*)
 *********************************************************************************
 Parameter that responsible for using calculate embeddings in memory or with memory-mapped files. Default is on (setting -e 0). If you want off use -e 1.
 
-output dir (*-output-dir* or *-o*)
+output dir (*--output-dir* or *-o*)
 ********************************************************
-Output directory for files with embeddings.
+Set output directory for files with embeddings.
 
-output format (*-output-format* or *-o*)
+output format (*--output-format* or *-o*)
 ********************************************************
 A parameter that defines the format of the output file. Possible output format are textfile (.txt) and numpy (.npy)
+
+
+Examples Cleora run configuration
+---------------------------------
+.. code-block:: bash
+
+   ./cleora -i files/samples/edgelist_sample.tsv 
+            --columns="complex::reflexive::a b complex::c" 
+            -d 128 
+            -n 5 
+            --relation-name=test_realation_name
+            -p 0
 
 
