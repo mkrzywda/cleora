@@ -13,36 +13,36 @@ Synopsis
 Run options 
 --------------
 
-input
-********************************************************
+- input
+
 Using input param: *--input* or *-i* 
 
-Param Description: A parameter that defines path for input file. You can use also absolute path or relative path.
+Param description: A parameter that defines path for input file. You can use also absolute path or relative path.
      
 
-file type
-********************************************************
+- file type
+
 Using file type param: *--type* or *-t*
 
-Param Description: This parameter is responsible for defining the input file extension to the algorithm. Cleora supports two kinds of input files .tsv (tab-separated values) and .json.
+Param description: This parameter is responsible for defining the input file extension to the algorithm. Cleora supports two kinds of input files .tsv (tab-separated values) and .json.
 
-dimension
-********************************************************
+- dimension
+
 Using dimension param: *--dimenstion* or *-d* 
 
-Param Description: Embedding dimension size.
+Param description: Embedding dimension size.
 
-number of iterations
-********************************************************
+- number of iterations
+
 Using number of iterations param: *--dimenstion* or *-d*
 
-Param Description: Set maximum number of iterations.
+param Description: Set maximum number of iterations.
 
-columns
-********************************************************
+- columns
+
 Using columnns param: *--columns* or *-c* 
 
-Param Description: Set column names (max. 12), with modifiers from list: [transient::, reflexive::, complex::]
+Param description: Set column names (max. 12), with modifiers from list: [transient::, reflexive::, complex::]
 
 .. list-table::
    :widths: 20 80
@@ -101,38 +101,38 @@ Picture below representation how works column modifiers:
     :alt: examples use case of column modifiers
 
 
-relation name
-********************************************************
+- relation name
+
 Using relation param: *--relation-name* or *-r*
 
-Param Description: Name of the relation, for output filename generation.
+Param description: Name of the relation, for output filename generation.
 
-prepend field name
-********************************************************
-Param Description: Using prepend field name param: *--relation-name* or *-r*
+- prepend field name
 
-Param Description: Prameter that responsible for prepending field name to entity in output.
+Using prepend field name param: *--relation-name* or *-r*
 
-log every n
-********************************************************
+Param description: Prameter that responsible for prepending field name to entity in output.
+
+- log every n
+
 Using log every n params : *--log-every-n* or *-l*
 
-Param Description: Set log output for every N lines
+Param description: Set log output for every N lines
 
-in memory embedding calculation
-*********************************************************************************
+- in memory embedding calculation
+
 Using log in memory embedding calculation param: *--in-memory-embedding-calculation* or *-e*
 
-Param Description: Parameter that responsible for using calculate embeddings in memory or with memory-mapped files. Default is on (setting -e 0). If you want off use -e 1.
+Param description: Parameter that responsible for using calculate embeddings in memory or with memory-mapped files. Default is on (setting -e 0). If you want off use -e 1.
 
-output dir
-********************************************************
+-output dir
+
 Using output dir param: *--output-dir* or *-o* 
 
-Param Description: Set output directory for files with embeddings.
+Param description: Set output directory for files with embeddings.
 
-output format
-********************************************************
+-output format
+
 Using output format param: --output-format* or *-o*  
 
 Param Description: A parameter that defines the format of the output file. Possible output format are textfile (.txt) and numpy (.npy)
