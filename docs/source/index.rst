@@ -21,6 +21,7 @@ Read the whitepaper `Cleora: A Simple, Strong and Scalable Graph Embedding Schem
    :caption: Contents:
 
    graph_creation
+   algorithms
    running
    examples
 
