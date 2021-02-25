@@ -76,8 +76,10 @@ For maximum efficiency we created a custom implementation of a sparse matrix dat
 Embedding is done in 2 basic steps: graph construction and training.
 
 Let's assume that the basic configuration of the program looks like this:
+
 .. code-block:: bash
 
+  
    --input files/samples/edgelist_2.tsv --columns="users complex::products complex::brands" --dimension 3 --number-of-iterations 4
 
 Every SparseMatrix is created based on the program argument **--columns**. For our example, there will be three SparseMatrix'es that will only read data from the columns:
