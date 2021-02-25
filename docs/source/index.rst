@@ -1,4 +1,19 @@
-Welcome to Synerise Cleora's   
+:github_url: https://github.com/Synerise/cleora
+
+Synersie Cleora AI  Documentation
+=====================================
+
+**Synersie Cleora AI** is a general-purpose model for efficient, scalable learning of stable and inductive entity embeddings for heterogeneous relational data. **Cleora** embeds entities in n-dimensional spherical spaces utilizing extremely fast stable, iterative random projections, which allows for unparalleled performance and scalability.
+
+Types of data which can be embedded include for example:
+
+- heterogeneous undirected graphs
+- heterogeneous undirected hypergraphs
+- text and other categorical array data
+- any combination of the above
+
+Read the whitepaper `Cleora: A Simple, Strong and Scalable Graph Embedding Scheme <https://arxiv.org/abs/2102.02302>`_
+
 ===========================================
 
 .. toctree::
@@ -7,7 +22,6 @@ Welcome to Synerise Cleora's
 
    graph_creation
    data_model
-   data_input
    batch_preparation
    running
    evaluation
