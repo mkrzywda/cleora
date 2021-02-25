@@ -26,7 +26,7 @@ Graph construction
 
 .. figure:: _static/cleora-sparse-matrix.png
     :figwidth: 100 %
-    :width: 60 %
+    :width: 100 %
     :align: center
     :alt: Sparse Matrix
 
