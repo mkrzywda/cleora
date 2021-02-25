@@ -1,7 +1,7 @@
 .. _algorithms:
 
-Algorithms using in Cleora
-=============================== 
+Hypergraph expansion methods
+============================================================= 
 
 Hypergraph Expansion - Cleora needs to break down all existing hyperedges into edges as the algorithm relies on the pairwise notion of node transition. Hypergraph expansion to graph is done using two alternative strategies:
 
