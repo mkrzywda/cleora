@@ -26,7 +26,14 @@ Those embeddings can then be utilized in a novel way thanks to their dim-wise in
 Graph construction
 ------------------------
 
-Graph construction starts with the creation of a helper matrix *P* object as a regular 2-D Rust array, which is built according to the selected 
+.. figure:: _static/hypergraph-expansion.png
+    :figwidth: 100 %
+    :width: 100 %
+    :align: center
+    :alt: examples use case of column modifiers
+
+
+**Graph construction** starts with the creation of a helper matrix *P* object as a regular 2-D Rust array, which is built according to the selected 
 expansion method. An example involving clique expansion is presented in Figure - a Cartesian product (all combinations) of all columns is created. 
 Each entity identifier from the original input file is hashed with `xxhash <https://cyan4973.github.io/xxHash/>`_ - a fast and efficient hashing method. 
 We hash the identifiers to store them in a unified, small data format. From the first line of our example:
