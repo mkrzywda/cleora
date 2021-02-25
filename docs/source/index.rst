@@ -1,6 +1,6 @@
 :github_url: https://github.com/Synerise/cleora
 
-Synersie Cleora AI  Documentation
+Synerise Cleora AI  Documentation
 =====================================
 
 **Synersie Cleora AI** is a general-purpose model for efficient, scalable learning of stable and inductive entity embeddings for heterogeneous relational data. **Cleora** embeds entities in n-dimensional spherical spaces utilizing extremely fast stable, iterative random projections, which allows for unparalleled performance and scalability.
